@@ -1,0 +1,15 @@
+
+textarea {
+  font-size: 1em;
+}
+
+input {
+  font-size: 0.8em;
+  height: 50px;
+  margin-top: 10px;
+  width: 120px;
+}
+
+pre {
+  margin: 10px 0;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css" type="text/css"/>
+<body>
+  <form>
+    <label for="">宽度：</label>
+    <input id="width" type="number" required autofocus min=0 step=0.01>
+    <span></span>
+    <br>
+    <label for="">高度：</label>
+    <input id="height" type="number" required min=0 step=0.01>
+    <span></span>
+    <br>
+    <input id="calculate" type="submit" value="计算">
+    <br>
+    <label for="">面积：</label>
+    <input id= "area" disabled type="text">
+    <br>
+    <label for="">周长：</label>
+    <input id="perimeter" disabled type="text">
+    <br>
+  </form>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+<script src="./index.js"></script>
+</html>

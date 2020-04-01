@@ -1,0 +1,25 @@
+form{
+  width:335px;
+  margin:50px auto;
+  font-size:1.2em
+}
+#calculate{
+  width: 70px;
+  margin-left: 67px;
+}
+input,label{
+  margin:5px 0;
+  padding-left: 5px;
+  font-size: 1em;
+}
+span{
+  color:red;
+}
+input:valid+span:after{
+  content:'x';
+  color:green;
+}
+input:invalid+span:after{
+  content:'x';
+  color:red;
+}
