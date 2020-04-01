@@ -1,0 +1,21 @@
+#main{
+  width: 300px;
+  margin:0 auto;
+}
+#pwd{
+  text-indent: 0.8em;
+  width: 200px;
+  height: 30px;
+}
+.iconfont{
+  font-size:30px
+}
+#icon{
+  position: absolute;
+  right:0;
+  top:2px;
+}
+#box{
+  position: relative;
+  width: 200px;
+}

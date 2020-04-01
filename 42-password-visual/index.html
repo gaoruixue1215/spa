@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>定时按钮</title>
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1711182_mf7e2x5xg4s.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <input type="button" id="add" value="创建密码框">
+  <input type="button" id='get' value="获取密码"><br>
+  <div id="main">
+    <!-- <div id="box">
+      <input type="password" id='pwd'>
+      <i class="iconfont icon-Eyevision" id='icon'></i>
+    </div> -->
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+  <script src="index.js"></script>
+  <script>
+    $(function(){
+      var $btnAdd = $('#add'),
+          $btnGet = $('#get');
+      $btnAdd.click(function(){
+        $getPwd.show('#main');
+      })
+      $btnGet.click(function(){
+        $getPwd.getPwd("#main")
+      })
+    })
+  </script>
+</body>
+</html>
