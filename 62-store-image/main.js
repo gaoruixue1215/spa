@@ -1,4 +1,4 @@
-$(function () {
+$(function(){
     var $url = $('input[type="text"]'),
         $btnSave = $('input[type="button"]'),
         $img = $('img'),
