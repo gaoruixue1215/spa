@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goto dialog的测试页面</title>
+    <link rel="stylesheet" href="./dlg-goto.css">
+</head>
+<body>
+    <input id="popup" type="button" value="弹出对话框"/>
+    <hr/>
+    <div id="main">
+        <!-- 定时器按钮 -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="./dlg-goto.js"></script>
+    <script>
+        $(function(){
+            var $btnDlg=$('#popup');
+            $btnDlg.click(function(){
+                $dlgGoto.show({
+                    num: Number($('#number').val()),
+                    title: "同意",
+                    onClick:function() {
+                        alert("您终于同意啦");
+                    }
+                })
+                    
+                //})
+            })
+        })
+    </script>
+</body>
+</html>
