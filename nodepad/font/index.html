@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>列表组件布局和测试页面</title>
+  <link rel="stylesheet" href="./list.css">
+  <link rel="stylesheet" href="./font.css">
+  <link rel="icon" href="https://i.wangding.in/favicon.ico" sizes="48x48" type="image/png">
+  <style>
+  .list1,
+  .list2,
+  .list3 {
+    display: inline-block;
+    margin: 10px 5px;
+  }
+  </style>
+</head>
+<body>
+<div class="list1"></div>
+<div class="list2"></div>
+<div class="list3"></div>
+<div class="test">
+  <input type="button" value="弹出对话框" >
+</div>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="./list.js"></script>
+<script src="./font.js"></script>
+<script>
+$(function() {
+  // $btnTest = $('div.test>input[type="button"]');
+
+  // $btnTest.click(function() {
+  //   $dlgFont.init();
+  // });
+
+  var fonts = ['Agency FB', 'Algerian', 'Arial', 'Arial Rounded MT', 'Axure Handwriting', 'Bahnschrift', 'Baskerville Old Face', 'Bauhaus 93', 'Bell MT', 'Berlin Sans FB', 'Bernard MT', 'BlackAdder ITC'],
+      styles = ['常规', '斜体', '粗体', '粗偏斜体'],
+      sizes = ['8', '9', '10', '11', '12', '14', '16', '18', '20', '22', '24', '26', '28', '36', '48', '72'];
+
+  var l1 = new fontList();
+  l1.show({
+    container: '.list1',
+    width: '176px',
+    list: fonts,
+    select:'Arial',
+    fontFamily: true,
+    // selectHandler: function(e) { console.log(fonts[e]); }
+  });
+  var l2 = new fontList();
+  l2.show({
+    container: '.list2',
+    width: '132px',
+    list: styles,
+    select:'常规',
+    fontStyle: true,
+    // selectHandler: function(e) { console.log(fonts[e]); }
+  });
+  var l3 = new fontList();
+  l3.show({
+    container: '.list3',
+    width: '60px',
+    list: sizes,
+    select:'16',
+    fontSize: true,
+    // selectHandler: function(e) { console.log(fonts[e]); }
+  });
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+  <title>无标题 - 记事本</title>
+  <link rel="stylesheet" href="./notepad.css">
+  <link rel="stylesheet" href="./menubar/menubar.css">
+  <link rel="stylesheet" href="./editor/editor.css">
+  <link rel="stylesheet" href="./font/font.css">
+  <link rel="stylesheet" href="./font/list.css">
+  <link rel="icon" href="images/notepad-icon-32.png" sizes="32x32" type="image/png">
+</head>
+<body>
+  <div class="notepad"></div>
+</body>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="./menudata.js"></script>
+<script src="./menubar/menubar.js"></script>
+<script src="./editor/editor.js"></script>
+<script src="./font/font.js"></script>
+<script src="./font/list.js"></script>
+
+<script>
+  
+  $(function(){
+    $menubar.show(np.menuData,'.notepad');
+    $menubar.enabled(1, 0, false);
+    $menubar.checked(2, 0, true);
+    $editor.show({
+      wrap:true,
+      box:'.notepad'
+    });
+    $editor.setFont({
+      family: np.fontFamily,
+      style: np.fontStype,
+      size: np.fontSize
+    });
+  })
+</script>
+</html>

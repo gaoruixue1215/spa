@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="box" id="box">
+		</div>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="./banner.js"></script>
+		<script>
+			 $(function(){
+				var $box = $('#box');
+				$banner.init({
+					container:'#box',
+					time:1500,
+					imgArr:["img/b1.png","img/b2.png","img/b3.png","img/b4.png","img/b5.png"],
+					page:5
+				})
+			})
+		</script>
+	</body>
+</html>

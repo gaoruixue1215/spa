@@ -1,0 +1,103 @@
+.notepad-font {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.box {
+    border: 1px solid #0f7fd6;
+    box-shadow: 10px 10px 10px #d6d6d6;
+    box-sizing: border-box;
+    cursor: default;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    user-select: none;
+    height: 498px;
+    width: 438px;
+}
+.notepad-titlebar {
+    background-color: white;
+    height: 30px;
+}
+  
+.notepad-titlebar .title {
+    left: 8px;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: left;
+    position: absolute;
+    margin:0px;
+}
+  
+.close-btn {
+    color: gray;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 30px;
+}
+  
+.close-btn:hover {
+    background-color: red;
+    color: white;
+}
+  
+.notepad-main {
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    font-size: 12px;
+    padding: 12px;
+    position: relative;
+    height: 466px;
+}
+
+.btn {
+    height: 28px;
+    width: 86px;
+}
+.font-family,
+.font-style {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.sample {
+    border-color: white;
+    height: 78px;
+    margin-top: 28px;
+    width: 194px;
+}
+.sample-txt{
+    margin-top: 5px;
+    margin-left: 8px;
+    /* line-height: 60px;
+    text-align: center; */
+}
+.script {
+    margin-top: 12px;
+}
+
+select {
+    height: 22px;
+    width: 214px;
+}
+.font-size {
+    display: inline-block;
+}
+
+.btn-ok {
+    bottom: 10px;
+    position: absolute;
+    right: 110px;
+}
+
+.btn-cancel {
+    bottom: 10px;
+    position: absolute;
+    right: 16px;
+}
+
